@@ -1,0 +1,87 @@
+<!doctype html>
+<html lang="en-GB">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#faf9f6">
+  <meta name="description" content="Dylan Todd, a backend software engineer in Bristol. Projects, experience and notes on building reliable software.">
+  <title>Dylan Todd — Backend engineer & curious builder</title>
+  <link rel="icon" href="./favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="./styles.css">
+  <script type="module" src="./app.js"></script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <div class="page-shell">
+    <header class="site-header">
+      <a class="wordmark" href="#top" aria-label="Dylan Todd, back to top">Dylan Todd<span>.</span></a>
+      <nav aria-label="Main navigation">
+        <a href="#projects">Projects</a><a href="#experience">Experience</a><a href="#notes">Notes</a><a href="#about">About</a>
+      </nav>
+    </header>
+    <main id="main">
+      <section class="hero" id="top" aria-labelledby="intro-title">
+        <p class="eyebrow location"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="M19 10c0 5-7 11-7 11S5 15 5 10a7 7 0 1 1 14 0Z"/><circle cx="12" cy="10" r="2"/></svg> Bristol, UK <span class="separator">/</span> Backend software engineer</p>
+        <h1 id="intro-title">Backend engineer.<br class="tablet-break"> Curious builder.</h1>
+        <p class="hero-description">Building reliable software for real-world problems.</p>
+        <div class="stack"><span class="eyebrow">In my toolkit</span><ul aria-label="Technologies"><li>Java</li><li>Spring Boot</li><li>GCP</li><li>PostgreSQL</li></ul></div>
+      </section>
+
+      <section class="projects-section" id="projects" aria-labelledby="projects-title">
+        <div class="section-heading"><h2 id="projects-title">Selected projects</h2><span class="meta">Ideas, systems & side projects</span></div>
+        <div class="project-grid">
+          <article class="project-card">
+            <div class="project-category">Forecasting / Data engineering</div>
+            <h3>Surf Forecasting Engine</h3>
+            <p>A surf forecast service concept combining ocean model data, buoy observations and probabilistic forecasting.</p>
+            <figure class="project-preview surf-preview">
+              <figcaption>Bristol Channel <span>Wave height · m</span></figcaption>
+              <svg viewBox="0 0 400 180" role="img" aria-labelledby="surf-chart-title"><title id="surf-chart-title">Illustrative wave height forecast rising midweek before easing towards the weekend</title><defs><linearGradient id="wave-fill" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#2a5df0" stop-opacity=".18"/><stop offset="1" stop-color="#2a5df0" stop-opacity=".01"/></linearGradient></defs><g class="chart-grid"><path d="M32 30H375M32 70H375M32 110H375M32 150H375"/></g><g class="chart-label"><text x="9" y="34">3</text><text x="9" y="74">2</text><text x="9" y="114">1</text><text x="9" y="154">0</text><text x="32" y="174">Tue</text><text x="111" y="174">Wed</text><text x="198" y="174">Thu</text><text x="280" y="174">Fri</text><text x="353" y="174">Sat</text></g><path d="M32 124 46 119 60 122 74 110 88 112 102 103 116 106 130 94 144 89 158 93 172 82 186 86 200 67 214 72 228 65 242 74 256 71 270 84 284 85 298 94 312 91 326 99 340 97 354 103 375 100V150H32Z" fill="url(#wave-fill)"/><path class="chart-secondary" d="M32 86Q90 81 140 62T235 39T315 53T375 45"/><path class="chart-line" d="M32 124 46 119 60 122 74 110 88 112 102 103 116 106 130 94 144 89 158 93 172 82 186 86 200 67 214 72 228 65 242 74 256 71 270 84 284 85 298 94 312 91 326 99 340 97 354 103 375 100"/></svg>
+              <div class="preview-footer"><span><i class="legend-line"></i> Model forecast</span><span>Illustrative data</span></div>
+            </figure>
+            <details class="project-details"><summary>Explore project <span aria-hidden="true">+</span></summary><div class="detail-body"><p class="eyebrow">Project concept</p><h4>A clearer view of the next swell.</h4><p>An idea for bringing ocean model output and local buoy observations into one forecast, with uncertainty made visible alongside wave height.</p><p><strong>Proposed focus:</strong> data ingestion, forecast APIs, scheduled processing and probabilistic modelling.</p><p class="muted">The preview is illustrative. Implementation status and repository links are still to be added.</p></div></details>
+          </article>
+
+          <article class="project-card">
+            <div class="project-category">Machine learning / Transport</div>
+            <h3>Train Delay Prediction</h3>
+            <p>Exploring how historical performance, timetables and operational data could help predict train delays.</p>
+            <figure class="project-preview train-preview">
+              <figcaption>Delay prediction <span>Next 24 hours · min</span></figcaption>
+              <svg viewBox="0 0 400 180" role="img" aria-labelledby="train-chart-title"><title id="train-chart-title">Illustrative train delays with an evening peak, comparing predictions with observations</title><g class="chart-grid"><path d="M32 30H375M32 70H375M32 110H375M32 150H375"/></g><g fill="#c1d5ff"><path d="M39 140h10v10H39zM56 136h10v14H56zM73 138h10v12H73zM90 119h10v31H90zM107 108h10v42H107zM124 125h10v25H124zM141 130h10v20H141zM158 111h10v39H158zM175 96h10v54H175zM192 119h10v31H192zM209 128h10v22H209zM226 112h10v38H226zM243 96h10v54H243zM260 103h10v47H260zM277 75h10v75H277zM294 46h10v104H294zM311 56h10v94H311zM328 86h10v64H328zM345 110h10v40H345zM362 124h10v26H362z"/></g><g class="chart-label"><text x="3" y="34">15</text><text x="3" y="74">10</text><text x="10" y="114">5</text><text x="10" y="154">0</text><text x="32" y="174">06:00</text><text x="108" y="174">10:00</text><text x="190" y="174">14:00</text><text x="271" y="174">18:00</text><text x="346" y="174">22:00</text></g><path class="chart-line" d="M39 137 56 134 73 136 90 131 107 119 124 123 141 124 158 128 175 123 192 128 209 123 226 121 243 113 260 115 277 99 294 81 311 77 328 87 345 108 362 117 375 120"/></svg>
+              <div class="preview-footer"><span><i class="legend-line"></i> Predicted delay</span><span>Illustrative data</span></div>
+            </figure>
+            <details class="project-details"><summary>Explore project <span aria-hidden="true">+</span></summary><div class="detail-body"><p class="eyebrow">Project concept</p><h4>Finding the signal in the timetable.</h4><p>A concept for estimating delays from historical train performance, scheduled services and operational conditions.</p><p><strong>Proposed focus:</strong> feature engineering, prediction pipelines, model evaluation and serving predictions through an API.</p><p class="muted">The chart contains illustrative values. A working model, evaluation results and source links are still to be added.</p></div></details>
+          </article>
+
+          <article class="project-card">
+            <div class="project-category">Automation / Developer tools</div>
+            <h3>Automation & Experiments</h3>
+            <p>A space for small tools and useful experiments, from data pipelines to service integrations and developer tooling.</p>
+            <figure class="project-preview automation-preview">
+              <figcaption>A little less manual <span>Pipeline concept</span></figcaption>
+              <svg viewBox="0 0 400 180" role="img" aria-labelledby="pipeline-title"><title id="pipeline-title">Example workflow: schedule, process, store, then analyse and notify</title><g class="flow-connectors"><path d="M104 54H153M247 54H296M200 86V114H112V129M200 114H289V129"/></g><g class="flow-box"><rect x="12" y="19" width="92" height="69" rx="9"/><rect x="154" y="19" width="92" height="69" rx="9"/><rect x="296" y="19" width="92" height="69" rx="9"/><rect x="65" y="129" width="94" height="42" rx="9"/><rect x="242" y="129" width="94" height="42" rx="9"/></g><g class="flow-icons"><rect x="48" y="33" width="21" height="20" rx="2"/><path d="M48 39h21M54 29v8M63 29v8M193 35l7-4 7 4v9l-7 4-7-4zM200 36v7M195 39h10"/><ellipse cx="342" cy="33" rx="11" ry="4"/><path d="M331 33v17c0 5 22 5 22 0V33M331 41c0 5 22 5 22 0"/></g><g class="flow-label"><text x="58" y="74">Schedule</text><text x="200" y="74">Process</text><text x="342" y="74">Store</text><text x="112" y="155">Analyse</text><text x="289" y="155">Notify</text></g></svg>
+              <div class="preview-footer"><span>Small tools. Useful connections.</span><span>Concept</span></div>
+            </figure>
+            <details class="project-details"><summary>Explore project <span aria-hidden="true">+</span></summary><div class="detail-body"><p class="eyebrow">Project collection concept</p><h4>Make the repetitive parts disappear.</h4><p>A home for experiments in scheduled jobs, data processing and integrations. The diagram sketches a simple pipeline from a scheduled task to analysis and notifications.</p><p><strong>Proposed focus:</strong> reliable retries, observability and tools that are easy to run and maintain.</p><p class="muted">Individual experiments and source links are still to be added.</p></div></details>
+          </article>
+        </div>
+      </section>
+
+      <section class="experience-section ruled-section" id="experience" aria-labelledby="experience-title">
+        <div class="section-intro"><p class="eyebrow">The work behind the work</p><h2 id="experience-title">Experience</h2><p>Reliable services.<br>Thoughtful engineering.</p></div>
+        <div class="experience-content">
+          <article class="experience-entry"><div class="experience-meta"><span class="placeholder-label">Work history to be added</span></div><h3>Backend Software Engineer</h3><p class="role-location">Bristol, UK</p><p>This is where my roles, teams and contributions will live. Employer details, dates and highlights are still to come.</p><ul class="tags" aria-label="Technical toolkit"><li>Java</li><li>Spring Boot</li><li>GCP</li><li>PostgreSQL</li></ul></article>
+          <p class="content-note">A little more context is on the way.</p>
+        </div>
+      </section>
+
+      <section class="notes-section ruled-section" id="notes" aria-labelledby="notes-title"><div class="section-heading"><div><p class="eyebrow">Thinking out loud</p><h2 id="notes-title">Notes</h2></div><span class="meta">A space to keep learning</span></div><div class="notes-empty"><span class="note-icon" aria-hidden="true">[ &nbsp; ]</span><div><h3>More building. Then some writing.</h3><p>Notes on backend engineering, side projects and things learned along the way. Nothing published just yet.</p></div></div></section>
+
+      <section class="about-section ruled-section" id="about" aria-labelledby="about-title"><div><p class="eyebrow">A little about me</p><h2 id="about-title">Engineer by trade.<br>Curious by default.</h2></div><div class="about-copy"><p>I’m Dylan, a backend software engineer based in Bristol, UK. I’m interested in building reliable software that solves real-world problems.</p><p>This is a home for the things I build, the work I do, and the ideas I’m still figuring out.</p><a class="text-link" href="#projects">Take a look at my projects <span aria-hidden="true">↗</span></a></div></section>
+    </main>
+    <footer class="site-footer"><a class="footer-name" href="#top">Dylan Todd<span>.</span></a><p>Built with curiosity, in Bristol.</p><a href="#top">Back to top <span aria-hidden="true">↑</span></a></footer>
+  </div>
+  <dialog id="project-dialog" aria-labelledby="dialog-title"><div class="dialog-toolbar"><span class="eyebrow">Project overview</span><button class="close-dialog" type="button" aria-label="Close project details">Close <span aria-hidden="true">×</span></button></div><h2 id="dialog-title"></h2><div id="dialog-content"></div></dialog>
+</body>
+</html>

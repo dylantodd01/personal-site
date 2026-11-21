@@ -1,0 +1,11 @@
+import assert from 'node:assert/strict';
+import { readFile, access } from 'node:fs/promises';
+const html = await readFile(new URL('../index.html', import.meta.url), 'utf8');
+const ids = [...html.matchAll(/\bid="([^"]+)"/g)].map(match => match[1]);
+assert.equal(ids.length, new Set(ids).size, 'IDs must be unique');
+for (const match of html.matchAll(/href="#([^"]+)"/g)) assert.ok(ids.includes(match[1]), `Missing anchor ${match[1]}`);
+assert.equal([...html.matchAll(/<h1\b/g)].length, 1, 'Use one h1');
+for (const match of html.matchAll(/(?:src|href)="(\.\/[^"#]+)"/g)) await access(new URL(`../${match[1]}`, import.meta.url));
+assert.ok(html.includes('id="experience"'), 'Experience section is required');
+assert.ok(html.includes('Illustrative data'), 'Demo charts must be identified');
+console.log('Structure, section links and local assets checked.');
