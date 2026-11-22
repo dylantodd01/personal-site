@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="en-GB">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#faf9f6">
+  <meta name="description" content="Surf is a personal project by Dylan Todd for checking UK surf forecasts and planning trips. Built with Java, Spring Boot, PostgreSQL, React and TypeScript.">
+  <title>Surf — Dylan Todd</title>
+  <link rel="icon" href="../../favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="../../styles.css">
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <div class="page-shell">
+    <header class="site-header">
+      <a class="wordmark" href="../../index.html" aria-label="Dylan Todd, home">Dylan Todd<span>.</span></a>
+      <nav aria-label="Main navigation"><a href="../../index.html#projects" aria-current="page">Projects</a><a href="../../index.html#experience">Experience</a><a href="../../index.html#notes">Notes</a><a href="../../index.html#about">About</a></nav>
+    </header>
+    <main class="case-study" id="main">
+      <a class="case-back" href="../../index.html#projects">All projects</a>
+      <section class="case-hero" aria-labelledby="project-title">
+        <div class="case-intro">
+          <p class="eyebrow">Personal project · Live</p>
+          <h1 id="project-title">Surf</h1>
+          <p class="case-subtitle">Surf forecasts and trip planning.</p>
+          <p class="case-summary">A web app for checking conditions at UK surf spots and planning trips around the forecast, daylight and driving time.</p>
+          <ul class="tags" aria-label="Project technologies"><li>Java 21</li><li>Spring Boot</li><li>PostgreSQL</li><li>React</li><li>TypeScript</li><li>Docker</li></ul>
+          <a class="project-site-link" href="https://surf.dylantodd.dev/">Visit surf.dylantodd.dev</a>
+        </div>
+        <figure class="case-map"><img src="../../assets/surf-map.png" width="892" height="800" alt="The Surf map showing Cornwall, surf spots, grouped markers and map attribution"><figcaption>Map view · Cornwall</figcaption></figure>
+      </section>
+
+      <section class="case-section" aria-labelledby="overview-title">
+        <h2 id="overview-title">About the project</h2>
+        <div class="case-copy"><p>Surf has three main views: a map for finding spots, a forecast view for checking conditions, and a planner for finding sessions within a driving limit.</p><p>The API combines marine and weather forecasts from Open-Meteo, calculates a surf-quality score for each beach and stores forecast snapshots in PostgreSQL. It provides up to 120 hours of hourly data, depending on availability.</p><p>The frontend is built with React and TypeScript. The trip planner compares two-hour daylight sessions using surf quality and road travel estimates.</p></div>
+      </section>
+
+      <section class="case-section" aria-labelledby="architecture-title">
+        <div><h2 id="architecture-title">Architecture</h2><span class="draft-label">Placeholder</span></div>
+        <div><p class="case-section-note">A basic layout for now. Deployment and service details still to add.</p>
+          <figure class="architecture-diagram" aria-labelledby="architecture-caption">
+            <div class="architecture-flow">
+              <div class="architecture-node"><span class="architecture-label">Frontend</span><h3>Web app</h3><p>React + TypeScript</p></div>
+              <div class="architecture-connector" aria-hidden="true"><span>HTTPS</span></div>
+              <div class="architecture-node"><span class="architecture-label">Backend</span><h3>REST API</h3><p>Java + Spring Boot</p></div>
+              <div class="architecture-connector" aria-hidden="true"><span>Data</span></div>
+              <div class="architecture-services"><div class="architecture-node"><span class="architecture-label">Storage</span><h3>PostgreSQL</h3><p>Forecast snapshots</p></div><div class="architecture-node"><span class="architecture-label">External service</span><h3>Open-Meteo</h3><p>Marine + weather data</p></div></div>
+            </div>
+            <figcaption id="architecture-caption">Draft: web app, API, database and forecast provider. This will be replaced with a more detailed diagram.</figcaption>
+          </figure>
+        </div>
+      </section>
+
+      <section class="case-section case-screens-section" aria-labelledby="screens-title">
+        <h2 id="screens-title">The website</h2>
+        <div class="case-gallery">
+          <figure><a href="../../assets/surf-explore.png" aria-label="Open the full-size spot explorer screenshot"><img src="../../assets/surf-explore.png" width="1317" height="800" alt="Surf spot list with forecast scores beside the Cornwall map" loading="lazy"></a><figcaption><h3>Explore</h3><p>Find spots on the map and compare their forecast scores.</p></figcaption></figure>
+          <figure><a href="../../assets/surf-planner.png" aria-label="Open the full-size trip planner screenshot"><img src="../../assets/surf-planner.png" width="1200" height="800" alt="Surf trip planner with starting point, dates and maximum drive controls" loading="lazy"></a><figcaption><h3>Trip planner</h3><p>Choose a starting point, dates and a maximum drive.</p></figcaption></figure>
+          <figure><a href="../../assets/surf-forecast.png" aria-label="Open the full-size forecast screenshot"><img src="../../assets/surf-forecast.png" width="1440" height="1100" alt="Surf forecast showing conditions and session information for Crackington Haven" loading="lazy"></a><figcaption><h3>Forecast</h3><p>Check conditions and available sessions for a spot.</p></figcaption></figure>
+          <p class="case-screenshot-note">Screenshots from November 2026. Forecast values change over time.</p>
+        </div>
+      </section>
+      <div class="case-end"><a href="../../index.html#projects">Back to all projects</a><a href="https://surf.dylantodd.dev/">Open Surf</a></div>
+    </main>
+    <footer class="site-footer"><a class="footer-name" href="../../index.html">Dylan Todd<span>.</span></a><p>Built with curiosity, in Bristol.</p><a href="#main">Back to top</a></footer>
+  </div>
+</body>
+</html>

@@ -1,7 +1,11 @@
 import { createServer } from 'node:http';
 import { readFile } from 'node:fs/promises';
 const files = new Map([['/', ['index.html', 'text/html']], ['/index.html', ['index.html', 'text/html']], ['/styles.css', ['styles.css', 'text/css']], ['/app.js', ['app.js', 'text/javascript']], ['/favicon.svg', ['favicon.svg', 'image/svg+xml']], ['/assets/surf-planner.png', ['assets/surf-planner.png', 'image/png']]]);
+files.set('/projects/surf/', ['projects/surf/index.html', 'text/html']);
+files.set('/projects/surf/index.html', ['projects/surf/index.html', 'text/html']);
+for (const image of ['surf-map.png', 'surf-explore.png', 'surf-forecast.png']) files.set(`/assets/${image}`, [`assets/${image}`, 'image/png']);
 createServer(async (req, res) => {
+  if (new URL(req.url, 'http://localhost').pathname === '/projects/surf') { res.writeHead(308, { Location: '/projects/surf/' }); res.end(); return; }
   const file = files.get(new URL(req.url, 'http://localhost').pathname);
   if (!file) { res.writeHead(404); res.end('Not found'); return; }
   try {

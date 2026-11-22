@@ -23,3 +23,9 @@ Reviewed the private `dylantodd01/surfapi` repository through the GitHub connect
 Verified scope: UK surf-spot exploration, hourly forecasts (up to 120 hours), deterministic surf-quality scores, daylight session planning and driving-time recommendations. Stack: Java 21, Spring Boot, PostgreSQL, React, TypeScript and Docker. Open-Meteo is the marine/weather provider. Removed unverified buoy-data and probabilistic-forecasting claims.
 
 The screenshot in `portfolio/assets/surf-planner.png` was captured from the live planner on 22 November 2026 and is a static preview. Source code remains private, so no public GitHub link is advertised. No private deployment configuration or source code is reproduced on the portfolio.
+
+## Surf project page — 22 November 2026
+
+Surf now has its own page at `portfolio/projects/surf/index.html`. The homepage card and its map preview link there directly. The other project overviews still use dialogs.
+
+Added screenshots of the live map, spot explorer and Crackington Haven forecast. Map credits are preserved in the images. The architecture section is explicitly a placeholder: replace or expand its HTML diagram with the reviewed deployment architecture later. Copy is deliberately brief and factual. The existing planner screenshot remains in the gallery.

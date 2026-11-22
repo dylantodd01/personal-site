@@ -17,5 +17,7 @@ Read `docs/FRONTEND.md` before changing this site. The application lives in `por
 - `portfolio/index.html`: page structure and content.
 - `portfolio/styles.css`: design tokens, components and responsive rules.
 - `portfolio/app.js`: progressive enhancement and project dialogs.
+- `portfolio/projects/`: standalone project pages; Surf is at `projects/surf/index.html`.
+- `portfolio/assets/`: website screenshots and other static assets.
 - `portfolio/scripts/`: local server, build and structural checks.
 - `docs/`: design conventions and pending content.

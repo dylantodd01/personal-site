@@ -6,7 +6,7 @@ An understated engineering portfolio, inspired by the supplied reference. Strong
 Use CSS custom properties for colors, spacing, radii and the content width. Use system sans-serif for prose and monospace for short metadata. Body copy is at least 16px. Blue identifies actions and chart data. Borders define project cards; generous whitespace defines larger sections.
 
 ## Structure and content
-Use a single h1, a heading for each section, and h3 for individual projects. Navigation links target stable section IDs. Prefer native anchors, buttons, details and dialogs over custom controls. Keep content in HTML so the page remains readable without JavaScript. Project links have a native details fallback, progressively enhanced into dialogs.
+Use a single h1 per page, a heading for each section, and h3 for individual projects. Navigation links target stable section IDs. Prefer native anchors and buttons over custom controls. Keep content in HTML so the page remains readable without JavaScript. Substantial project write-ups use standalone pages in `portfolio/projects/<slug>/index.html`; homepage cards link directly to them. The smaller train and developer-tooling overviews currently retain native disclosure sections enhanced into dialogs.
 
 Keep repeated project structures consistent. New content or complex state may justify extracting components or adopting a framework; do not introduce either speculatively. Personal claims need user-supplied evidence. Example chart values must be identified as illustrative.
 
