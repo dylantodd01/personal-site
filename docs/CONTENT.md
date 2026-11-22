@@ -2,8 +2,8 @@
 
 The reference supplies Dylan Todd, Bristol UK, backend software engineer, Java, Spring Boot, GCP and PostgreSQL. Confirm these before public launch.
 
-- Confirm the status and descriptions of the surf and train projects. They remain project concepts with illustrative charts.
-- Add real project repository/demo links when available.
+- Confirm the train project's status and description. It remains a project concept with an illustrative chart.
+- Add any further public project links when available.
 - Add the first note and any additional contact/profile links.
 
 ## LinkedIn content update — 21 November 2026
@@ -15,3 +15,11 @@ Used selectively: Software Engineer II (September 2026–present), Graduate Soft
 The third project now describes the real Copilot Chat extension built during the graduate role. Its diagram is illustrative. No public repository was supplied. Internal edit links, company images, relative tenure counts and detailed customer-scale figures were omitted.
 
 The initial Sites deployment is private. Review content before changing its audience.
+
+## Surf project update — 22 November 2026
+
+Reviewed the private `dylantodd01/surfapi` repository through the GitHub connector: README, build.gradle.kts, frontend/package.json and MarineForecastService.java. Also visited https://surf.dylantodd.dev/ and its Explore view. Replaced the surf concept with a live project description, actual app screenshot and working website links.
+
+Verified scope: UK surf-spot exploration, hourly forecasts (up to 120 hours), deterministic surf-quality scores, daylight session planning and driving-time recommendations. Stack: Java 21, Spring Boot, PostgreSQL, React, TypeScript and Docker. Open-Meteo is the marine/weather provider. Removed unverified buoy-data and probabilistic-forecasting claims.
+
+The screenshot in `portfolio/assets/surf-planner.png` was captured from the live planner on 22 November 2026 and is a static preview. Source code remains private, so no public GitHub link is advertised. No private deployment configuration or source code is reproduced on the portfolio.
